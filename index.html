@@ -86,7 +86,6 @@ body, html {
   padding-top: 193px; /* Adjust this value to match the height of the .rectangle element */
 }
 
-
 /* Bold and use Roboto font for the specified div */
 .w3-bar-item.w3-center {
   font-weight: bold;
@@ -97,7 +96,6 @@ body, html {
   margin-right: 5px;
   font-family: "Roboto", sans-serif; /* Apply Roboto font */
   font-weight: normal; /* Regular font weight */
-
 }
 
 /* Bold and use Roboto font for the REQUEST A QUOTE link */
@@ -134,14 +132,13 @@ body, html {
   line-height: normal;
 }
 
-
 .w3-jumbo-2 {
   color: #000;
-font-family: Roboto;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* Mobile View */
@@ -161,40 +158,94 @@ line-height: normal;
 }
 
 @media screen and (max-width: 768px) {
-    /* Mobile View Styles for Header Elements */
-    .w3-jumbo,
-    .w3-jumbo-2,
-    .w3-xxlarge {
-      color: #C41C10;
-      text-align: center;
-      font-family: Roboto;
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
-    /* Mobile View Styles for Request Quote Button */
-    .w3-button.w3-red {
-      display: flex;
-      width: 154px;
-      height: 38px;
-      padding: 15px 45px;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
-    }
+  /* Mobile View Styles for Header Elements */
+  .w3-jumbo,
+  .w3-jumbo-2,
+  .w3-xxlarge {
+    color: #C41C10;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
+  /* Mobile View Styles for Request Quote Button */
+  .w3-button.w3-red {
+    display: flex;
+    width: 154px;
+    height: 38px;
+    padding: 15px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+}
+
+/* Add the following styles for the transparent background */
+.transparent-bg {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.transparent-bg {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      min-height: 100%;
+      /* Parallax effect */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    @keyframes slideUpAnimation {
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.gif {
+  animation: slideUpAnimation 2s;
+}    
+
+@keyframes slideUpAnimation {
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.gif {
+  animation: slideUpAnimation 2s infinite; /* Set the animation iteration count to infinite */
+}
+
+
+.w3-left {
+    float:none!important; 
+}
+
 
 </style>
 </head>
 <body>
-</div>
-
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top" style="padding-top: 52px; ">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <div class="w3-bar transparent-bg" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">
       <img src="/images/Logo.png" alt="Logo" class="logo-img">
     </a>
@@ -212,7 +263,6 @@ line-height: normal;
     </a>
   </div>
 </div>
-
 <!-- Add the servicing and contact info here -->
 <div class="w3-bar w3-black w3-card rectangle" style="top:0px">
   <i class="material-icons" style="margin-right: 5px;">phone</i> 7302371808
@@ -237,16 +287,81 @@ line-height: normal;
 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="header-container w3-display-middle w3-center w3-text-white">
-    <div style="padding:48px">
-      <span class="w3-jumbo w3-hide-small" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">One-stop shop </span><span style="font: size 72px; ;">Contractor</span><br>
-      <span class="w3-jumbo-2 w3-hide-small" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">Simplifying remodeling complexity</span><br>
+    <div style="padding:98px">
+      <!-- Use the gif class to apply the animation -->
+      <div class="gif">
+        <span class="w3-jumbo w3-hide-small" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal; white-space: nowrap;">
+          One-stop shop <span style="color: black;">Contractor</span>
+        </span>
+      </div>
+      <br>
+      <!-- Use the gif class to apply the animation -->
+      <div class="gif">
+        <span class="w3-jumbo-2 w3-hide-small" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">
+          Simplifying remodeling complexity
+        </span>
+      </div>
+      <br>
       <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">Start something that matters</span><br>
-      <p><a href="#about" class="w3-button w3-red w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" style="display: flex; width: 154px; height: 38px; padding: 15px 45px; justify-content: center; align-items: center; gap: 10px; flex-shrink: 0;">REQUEST QUOTE</a></p>
+      <div class="w3-bar-item w3-center" style="flex: 1; display: flex; width: 200px; height: 50px; padding: 15px 45px; justify-content: center; align-items: center; gap: 10px; margin-left: 199px; flex-shrink: 0; background-color: red; white-space: nowrap;">
+        <a href="your_quote_page.html" style="display: block; color: white; text-decoration: none;">
+          REQUEST A QUOTE
+        </a>
+      </div>
     </div>
   </div>
 </header>
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div class="w3-container" style="padding: 128px 16px";   id="about">
+  <div style="display: flex; width: 1440px;  height: auto; flex-shrink: 0; background: #FFF; margin: 0 auto;">
+    <div style="flex: 1; padding: 20px;">
+      <h3 class="w3-left" style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
+        Who we are
+      </h3>
+      <br>
+      <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal; margin-top: 2px; margin-bottom: 2px;">
+        VJ Tellez Construction LLC
+      </p>
+      <br>
+      <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%;">
+        We are a kitchen and bathroom contractor with over 15 years of experience serving the Austin, Texas area. We operate as a one-point-of-contact for all remodeling and construction needs, simplifying the complexity of managing multiple contractors.
+      </p>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px;">
+        <!-- Rest of your about section code -->
+      </div>
+    </div>
+    <!-- Image -->
+    <img src="/images/30f5a0592d61f646e3a8042786404329.png" alt="Your Image" style="width: 495px; height: 279px; flex-shrink: 0;">
+  </div>
+</div>
+
+<!-- Background tile with values -->
+<div class="w3-container"  style="width: 1046px; height: 1600px; flex-shrink: 0; background: #EFEFEF; position: absolute; z-index: 1;">
+  <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
+    What we offer
+  </div>
+  <br>
+  <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
+    Our Services
+  </p>
+  
+  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
+    Bathroom Remodeling
+  </p>
+  
+  <br>
+  <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
+    Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
+  </p>
+  <!-- Image -->
+  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 100%; transform: translateX(-50%);">
+</div>
+<!-- Text: What we offer -->
+<div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 50%; transform: translateX(-50%);">
+  What we offer
+</div>
+<!-- Second Block Section -->
+<div class="w3-container" style="width: auto; height: 1851px; flex-shrink: 0; background: #D9D9D9; padding: 128px 16px; position: relative; z-index: 0;" id="about">
   <h3 class="w3-center">ABOUT THE COMPANY</h3>
   <p class="w3-center w3-large">Key features of our company</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -254,40 +369,32 @@ line-height: normal;
   </div>
 </div>
 
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <!-- Rest of your about section code -->
-  </div>
-</div>
 
 <!-- Rest of your HTML content goes here -->
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.cloudzguru.com" title="CloudzGuru" target="_blank" class="w3-hover-text-green">RW</a></p>
-</footer>
+   <a href="https://www.cloudzguru.com" title="CloudzGuru" target="_blank" rel="nofollow"  class="w3-hover-text-green"></a></p>
+</footer
 
 <!-- Script for sidebar/navigation -->
 <script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+window.addEventListener("scroll", function() {
+  var navbar = document.getElementById("myNavbar");
+  if (window.scrollY > 0) {
+    navbar.style.backgroundColor = "#D9D9D9";
+  } else {
+    navbar.style.backgroundColor = "transparent";
+  }
+});
+<!-- Script for parallax effect -->
+window.addEventListener("scroll", function() {
+      var header = document.getElementById("home");
+      var yPos = -window.scrollY / 2;
+      header.style.backgroundPositionY = yPos + "px";
+    });
 </script>
 
 </body>
