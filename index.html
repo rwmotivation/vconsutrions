@@ -252,6 +252,47 @@ body, html {
     float:none!important; 
 }
 
+  /* Block Above Footer */
+   /* Block Above Footer */
+   .block-above-footer {
+    width: auto;
+    height: 284px;
+    flex-shrink: 0;
+    background: #ffffff;
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column; /* Add this line to stack the elements vertically */
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* Set a high z-index value to ensure it appears on top */
+
+  }
+
+  .our-process {
+    color: #000000; /* To change the text color to white */
+  }
+
+
+  .get-started {
+    color: #080808;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 
 </style>
 </head>
@@ -338,7 +379,6 @@ body, html {
       <br>
       <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%;">
         We are a kitchen and bathroom contractor with over 15 years of experience serving the Austin, Texas area. We operate as a one-point-of-contact for all remodeling and construction needs, simplifying the complexity of managing multiple contractors.
-      </p>
       <div class="w3-row-padding w3-center" style="margin-top: 64px;">
         <!-- Rest of your about section code -->
       </div>
@@ -384,27 +424,80 @@ body, html {
     <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
       Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
     </p>
+     <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
+      What we offer
+
+    </div>
     <!-- Image -->
     <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 430px; left: 100%; transform: translateX(-50%);">
+<!-- Background tile with values -->
+<div class="w3-container" style="width: 500px; height: 1600px; flex-shrink: 0; background: #EFEFEF; position: absolute; z-index: 1;">
+  <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
+    What we offer
+  </div>
+  <br>
+  <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
+    Our Services
+  </p>
+  
+  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
+    Bathroom Remodeling
+  </p>
+  
+  <br>
+  <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
+    Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
+  </p>
+  <!-- Image -->
+  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 206%; transform: translateX(-50%);">
+  <!-- Second block of services section -->
+  <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
+    What we offer
+  </div>
+  <br>
+  <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
+    Our Services
+  </p>
+  
+  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
+    Bathroom Remodeling
+  </p>
+  
+  <br>
+  <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
+    Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
+  </p>
+  <!-- Second image -->
+  <img src="/images/your_second_image.jpg" alt="Your Second Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-second-image>), lightgray 50% / cover no-repeat; position: absolute; top: 512px; left: 206%; transform: translateX(-50%);">
+</div>
+
+
 </div>
 <!-- Second Block Section -->
 <div class="w3-container" style="width: auto; height: 1851px; flex-shrink: 0; background: #D9D9D9; padding: 128px 16px; position: relative; z-index: 0;" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <!-- <h3 class="w3-center">ABOUT THE COMPANY</h3>
   <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
+  <div class="w3-row-padding w3-center" style="margin-top:64px"> -->
     <!-- Rest of your about section code -->
   </div>
 </div>
 
+<!-- Our Process block -->
+<div class="block-above-footer">
+  <p class="get-started">How to get started</p>
+  <h2 class="our-process">Our Process</h2>
+  
+</div>
 
-<!-- Rest of your HTML content goes here -->
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<!-- footer -->
+<footer class="w3-center w3-black w3-padding-64" style="position: relative; z-index: 100; width: auto; height: 400px; flex-shrink: 0; background: #000;">
+  <img src="/images/Logo (1).png" alt="Logo" class="logo-img" style="position: absolute; top: 10px; left: 10px; width: 75px; height: 86.992px; flex-shrink: 0;">
   <div class="w3-xlarge w3-section">
   </div>
-   <a href="https://www.cloudzguru.com" title="CloudzGuru" target="_blank" rel="nofollow"  class="w3-hover-text-green"></a></p>
-</footer
+  <a href="https://www.cloudzguru.com" title="CloudzGuru" target="_blank" rel="nofollow" class="w3-hover-text-green"></a>
+  <p></p>
+</footer>
+
 
 <!-- Script for sidebar/navigation -->
 <script>
