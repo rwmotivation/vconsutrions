@@ -16,6 +16,18 @@ body, html {
   line-height: 1.8;
 }
 
+  /* Style for the fixed navigation bar */
+  .w3-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Set a higher z-index to ensure it's on top of other elements */
+  }
+  /* Add some padding to the body to compensate for the fixed navbar */
+  body {
+    padding-top: 60px; /* Adjust this value according to the height of your navbar */
+  }
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -84,6 +96,7 @@ body, html {
 
 .w3-top {
   padding-top: 193px; /* Adjust this value to match the height of the .rectangle element */
+  z-index: 20000;
 }
 
 /* Bold and use Roboto font for the specified div */
@@ -355,10 +368,24 @@ body, html {
   </p>
   <!-- Image -->
   <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 100%; transform: translateX(-50%);">
-</div>
-<!-- Text: What we offer -->
-<div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 50%; transform: translateX(-50%);">
-  What we offer
+      <!-- second block of services section -->
+    <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
+      What we offer
+    </div>
+    <br>
+    <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
+      Our Services
+    </p>
+    
+    <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
+      Bathroom Remodeling
+    </p>
+    <br>
+    <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
+      Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
+    </p>
+    <!-- Image -->
+    <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 430px; left: 100%; transform: translateX(-50%);">
 </div>
 <!-- Second Block Section -->
 <div class="w3-container" style="width: auto; height: 1851px; flex-shrink: 0; background: #D9D9D9; padding: 128px 16px; position: relative; z-index: 0;" id="about">
