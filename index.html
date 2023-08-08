@@ -252,7 +252,6 @@ body, html {
     float:none!important; 
 }
 
-  /* Block Above Footer */
    /* Block Above Footer */
    .block-above-footer {
     width: auto;
@@ -293,6 +292,265 @@ body, html {
     line-height: normal;
     text-transform: uppercase;
   }
+
+   /* Boxes Styles */
+   .boxes-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: #D9D9D9;
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1
+  }
+  .custom-block {
+    width: 1440px;
+    height: 500px;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .custom-block2{
+  box-sizing: border-box;
+  width: auto;
+  max-width: auto;
+  height: 500px;
+  background: #D9D9D9;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px;
+  }
+
+  .custom-block2 .heading {
+  color: rgba(0, 0, 0, 1);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0%;
+}
+
+.custom-block2 .sub-heading {
+  color: rgba(0, 0, 0, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.custom-block2 .text {
+  color: rgba(0, 0, 0, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 20px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1440px) {
+  .custom-block2 {
+    padding: 10px;
+    height: auto;
+  }
+  
+  .custom-block2 .heading {
+    font-size: 28px;
+  }
+  
+  .custom-block2 .sub-heading {
+    font-size: 16px;
+  }
+  
+  .custom-block2 .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-block2 {
+    padding: 5px;
+    height: auto;
+  }
+  
+  .custom-block2 .heading {
+    font-size: 24px;
+  }
+  
+  .custom-block2 .sub-heading {
+    font-size: 14px;
+  }
+  
+  .custom-block2 .text {
+    font-size: 14px;
+  }
+}
+
+.image-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+ 
+  }
+  
+  .positioned-image {
+    position: absolute;
+    top: 600px;
+    left: 200px;
+  }
+
+  .middle-image {
+  z-index: 1;
+  width: 50px;
+  left: 150px; 
+  transform: translateX(-0%); 
+  top: 50%; 
+  transform: translateY(-20%);
+  }
+
+  .right-image {
+  z-index: -3;
+  width: 100px; /* Adjust this to your preferred width */
+  right: 0;
+  top: 90%; /* Position in the middle vertically */
+  transform: translateY(-80%); /* Center vertically */
+}
+
+.left-image {
+  z-index: -3;
+  width: 100px; /* Adjust this to your preferred width */
+  left: 0;
+  top: 30%; /* Position in the middle vertically */
+  transform: translateY(-180%); /* Center vertically */
+}
+.custom-element {
+  width: auto;
+  height: 150px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.trustworthy-text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.custom-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 180px;
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-element-img {
+  width: auto;
+  height: 487px;
+  flex-shrink: 0;
+  background: url("images/bgm.jpeg") lightgray 50% / cover no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.get-started-text,
+.quote-text {
+  color: #000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.get-started-text {
+  font-size: 14px;
+}
+
+.quote-text {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.red-line {
+  width: 100px;
+  height: 3px;
+  background: #C41C10;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.custom-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding: 15px 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #C41C10;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
 
 </style>
 </head>
@@ -431,7 +689,6 @@ body, html {
     <!-- Image -->
     <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 430px; left: 100%; transform: translateX(-50%);">
 <!-- Background tile with values -->
-<div class="w3-container" style="width: 500px; height: 1600px; flex-shrink: 0; background: #EFEFEF; position: absolute; z-index: 1;">
   <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
     What we offer
   </div>
@@ -439,7 +696,7 @@ body, html {
   <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
     Our Services
   </p>
-  
+  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 800px; left: 100%; transform: translateX(-50%);">
   <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
     Bathroom Remodeling
   </p>
@@ -455,19 +712,17 @@ body, html {
     What we offer
   </div>
   <br>
-  <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
-    Our Services
-  </p>
   
   <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
     Bathroom Remodeling
   </p>
   
   <br>
+  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 1200px; left: 100%; transform: translateX(-50%);">
   <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
     Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
   </p>
-  <!-- Second image -->
+  <!-- Sec  ond image -->
   <img src="/images/your_second_image.jpg" alt="Your Second Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-second-image>), lightgray 50% / cover no-repeat; position: absolute; top: 512px; left: 206%; transform: translateX(-50%);">
 </div>
 
@@ -489,6 +744,54 @@ body, html {
   
 </div>
 
+<div class="boxes-container" style="margin-left: 370px;">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- custom block2  -->
+<div class="custom-block2">
+  <p class="heading" style="padding-top: 450px;">Responsive Block</p>
+  <p class="sub-heading">This block stays responsive on all screens</p>
+  <div class="content-wrapper">
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dolor et elit accumsan suscipit eu id libero. Fusce non scelerisque velit. Aliquam vitae libero libero. Nulla facilisi.</p>
+    <div class="image-container">
+    <img src="/images/c4a7345e29c41b22b1c0f6501e8c34d8.jpeg" class="middle-image" style="width: 413px; height: 275px; flex-shrink: 0; float: right; margin-left: 520px; margin-right: -750px; margin-top: -120px;" alt="Image">
+    <img src="/images/right.jpeg" alt="Image 3" class="right-image" style="width: 413px;height: 275px;flex-shrink: 0;float: left;margin-left: 520px;margin-right: -480px;margin-top: 43px;">
+    <img src="/images/left.jpeg" alt="Image 3" class="left-image" style="width: 413px;height: 275px;flex-shrink: 0;float: right;margin-left: 520px;margin-right: -480px;margin-top: -45px;">
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="custom-element">
+<p class="custom-text">What customers have to say</p>
+<p class="trustworthy-text">Trustworthy Local Contractor</p>
+</div>
+
+<div class="custom-image">
+  <img src="/images/Logos.png" alt="Image">
+</div>
+<div class="custom-element-img">
+  <br>
+<p class="get-started-text">GET STARTED</p>
+<p class="quote-text">Request A Free Quote</p>
+
+<div class="red-line"></div>
+
+<br>
+
+<div class="button-container">
+  <button class="custom-button">Request Quote</button>
+</div>
+</div>
+</div>
 <!-- footer -->
 <footer class="w3-center w3-black w3-padding-64" style="position: relative; z-index: 100; width: auto; height: 400px; flex-shrink: 0; background: #000;">
   <img src="/images/Logo (1).png" alt="Logo" class="logo-img" style="position: absolute; top: 10px; left: 10px; width: 75px; height: 86.992px; flex-shrink: 0;">
