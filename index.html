@@ -488,6 +488,8 @@ body, html {
   background: url("images/bgm.jpeg") lightgray 50% / cover no-repeat;
   position: relative;
   text-align: center;
+  opacity: 0.6;
+
 }
 
 .text-container {
@@ -505,6 +507,7 @@ body, html {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+
 }
 
 .get-started-text {
@@ -550,6 +553,60 @@ body, html {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+/* 
+.w3-xxlarge {
+    /* Your existing text styles */
+} */
+
+.w3-bar-item {
+    width: 100%; /* Expand to full width */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    padding: 15px; /* Adjust padding as needed */
+}
+
+.red-button {
+    display: block;
+    width: 100%;
+    height: 42.589px;
+    padding: 15px 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #C41C10;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    text-align: center; /* Center text within the button */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .w3-xxlarge {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    .red-button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px 30px; /* Adjust padding for smaller screens */
+    }
+}
+
+.red-line2 {
+    width: 100px;
+    height: 3px;
+    background: #C41C10;
+    margin: 0 auto; /* Center the line horizontally */
 }
 
 </style>
@@ -631,9 +688,10 @@ body, html {
         Who we are
       </h3>
       <br>
-      <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal; margin-top: 2px; margin-bottom: 2px;">
+      <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 56px; font-style: bold; font-weight: 700; line-height: normal; margin-top: 2px; margin-bottom: 2px;">
         VJ Tellez Construction LLC
       </p>
+      <div style="width: 100px; height: 3px; background: #C41C10;"></div>
       <br>
       <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%;">
         We are a kitchen and bathroom contractor with over 15 years of experience serving the Austin, Texas area. We operate as a one-point-of-contact for all remodeling and construction needs, simplifying the complexity of managing multiple contractors.
@@ -655,7 +713,8 @@ body, html {
   <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
     Our Services
   </p>
-  
+  <div style="width: 100px; height: 3px; background: #C41C10;"></div>
+
   <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
     Bathroom Remodeling
   </p>
@@ -672,55 +731,37 @@ body, html {
     </div>
     <br>
     <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
-      Our Services
+      Kitchen Remodeling
     </p>
     
-    <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
-      Bathroom Remodeling
-    </p>
-    <br>
     <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-      Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
-    </p>
+      The kitchen is the heart of the home, let us build the kitchen you  have always dreamed of. Not sure where to start? Our designer can assist in the planning process to get it just right.    </p>
      <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-      What we offer
-
     </div>
     <!-- Image -->
-    <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 430px; left: 100%; transform: translateX(-50%);">
+    <img src="/images/kitchenremodel.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 430px; left: 100%; transform: translateX(-50%);">
 <!-- Background tile with values -->
   <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-    What we offer
   </div>
-  <br>
   <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
-    Our Services
-  </p>
-  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 800px; left: 100%; transform: translateX(-50%);">
-  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
-    Bathroom Remodeling
-  </p>
-  
-  <br>
+    In-Home Remodeling </p>
+  <img src="/images/inhome.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 688px; left: 100%; transform: translateX(-50%);">
   <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-    Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
+    Although, we specialize in bathroom and kitchen remodeling we can do almost about any remodel work. We know confidently you will get the remodel you dream of.
   </p>
   <!-- Image -->
-  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 206%; transform: translateX(-50%);">
+  <img src="/images/design.png" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 206%; transform: translateX(-50%);">
   <!-- Second block of services section -->
   <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-    What we offer
   </div>
   <br>
-  
-  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
-    Bathroom Remodeling
+  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: bold; font-weight: 700; line-height: normal; text-transform: uppercase;">
+    Design
   </p>
-  
-  <br>
-  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 1200px; left: 100%; transform: translateX(-50%);">
+
+  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 945px; left: 100%; transform: translateX(-50%);">
   <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-    Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
+    Not sure where to start? Our in-house designer can assist you find the perfect look for your home. See how your home can potentially look and what works best for your home.
   </p>
   <!-- Sec  ond image -->
   <img src="/images/your_second_image.jpg" alt="Your Second Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-second-image>), lightgray 50% / cover no-repeat; position: absolute; top: 512px; left: 206%; transform: translateX(-50%);">
@@ -744,7 +785,7 @@ body, html {
   
 </div>
 
-<div class="boxes-container" style="margin-left: 370px;">
+<div class="boxes-container" style="margin-left: 369px;">
   <div class="box">1</div>
   <div class="box">2</div>
   <div class="box">3</div>
@@ -756,10 +797,19 @@ body, html {
 <br>
 <!-- custom block2  -->
 <div class="custom-block2">
-  <p class="heading" style="padding-top: 450px;">Responsive Block</p>
-  <p class="sub-heading">This block stays responsive on all screens</p>
+  <p  style="padding-top: 450px; font-family: Roboto;font-size: 14px;font-weight: 700;text-transform: uppercase;">What we have done</p>
+  <p class="sub-heading">Gallery</p>
   <div class="content-wrapper">
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dolor et elit accumsan suscipit eu id libero. Fusce non scelerisque velit. Aliquam vitae libero libero. Nulla facilisi.</p>
+    <p class="text">See why our customers love our work.</p>
+  
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">Start something that matters</span><br>
+    <div class="w3-bar-item w3-center" style="flex: 1; display: flex; justify-content: left; align-items: left; margin-left: 15px; margin-right: auto; background-color: red; white-space: nowrap; position: relative;z-index: 1;width: 200px; height: 48px;">
+        <a href="your_quote_page.html" class="red-button">
+            VIEW Gallery
+        </a>
+      </div>
+    
+
     <div class="image-container">
     <img src="/images/c4a7345e29c41b22b1c0f6501e8c34d8.jpeg" class="middle-image" style="width: 413px; height: 275px; flex-shrink: 0; float: right; margin-left: 520px; margin-right: -750px; margin-top: -120px;" alt="Image">
     <img src="/images/right.jpeg" alt="Image 3" class="right-image" style="width: 413px;height: 275px;flex-shrink: 0;float: left;margin-left: 520px;margin-right: -480px;margin-top: 43px;">
@@ -769,10 +819,12 @@ body, html {
 </div>
 
 </div>
-
+<br>
+<br>
+<br>
 <div class="custom-element">
 <p class="custom-text">What customers have to say</p>
-<p class="trustworthy-text">Trustworthy Local Contractor</p>
+<p class="trustworthy-text" style="font-style: bold; text-decoration: underline red;color: black;">Trustworthy Local Contractor</p>
 </div>
 
 <div class="custom-image">
@@ -781,9 +833,10 @@ body, html {
 <div class="custom-element-img">
   <br>
 <p class="get-started-text">GET STARTED</p>
-<p class="quote-text">Request A Free Quote</p>
+<p class="quote-text" style="opacity: initial;">Request A Free Quote</p>
 
-<div class="red-line"></div>
+
+<div class="red-line2"></div>
 
 <br>
 
@@ -794,7 +847,7 @@ body, html {
 </div>
 <!-- footer -->
 <footer class="w3-center w3-black w3-padding-64" style="position: relative; z-index: 100; width: auto; height: 400px; flex-shrink: 0; background: #000;">
-  <img src="/images/Logo (1).png" alt="Logo" class="logo-img" style="position: absolute; top: 10px; left: 10px; width: 75px; height: 86.992px; flex-shrink: 0;">
+  <img src="/images/Logo (1).png" alt="Logo`" class="logo-img" style="position: absolute; top: 10px; left: 10px; width: 75px; height: 86.992px; flex-shrink: 0;">
   <div class="w3-xlarge w3-section">
   </div>
   <a href="https://www.cloudzguru.com" title="CloudzGuru" target="_blank" rel="nofollow" class="w3-hover-text-green"></a>
