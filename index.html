@@ -787,6 +787,109 @@ top: 10px;
   margin-top: 130px;
   z-index: 1;
 }
+.contactors{
+  width: auto;
+  height: auto;
+  background: #FFF;
+  flex-shrink: 0;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.sectioncontainer{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 100px;
+}
+.coustsay{
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.trust{
+  color: #000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.inlineflexcontainer{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 900px;
+  margin-left: 400px;
+}
+.testimg1 {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  width: 100%; /* Adjust as needed */
+  max-width: 788.48px; /* 197.12px * 4 images */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Adjust spacing around images */
+}
+
+.test-img {
+  width: 197.12px;
+  height: 64px;
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  margin-right: 10px; 
+  /* Adjust the gap between images */
+}
+.test-img2 {
+  width: 210px;
+  height: 64px;
+  background: url(/images/thumb.png);
+  background-size: contain;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin-right: 100px; /* Gap between this element and others */
+}
+.test-img3{
+  width: 210px;
+  height: 64px;
+  background: url(/images/thumb.png);
+  background-size: contain;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin-right: 100px; /* Gap between this element and others */
+}
+.test-img4{
+  width: 210px;
+  height: 64px;
+  background: url(/images/Angi-logo-Orange\ 1.png);
+  background-size: contain;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin-right: 100px; /* Gap between this element and others */
+  position: absolute;
+  left: 825px;
+}
+.test-img5{
+  width: 210px;
+  height: 64px;
+  background: url(/images/yelp.png);
+  background-size: contain;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin-right: 500px; /* Gap between this element and others */
+  position: absolute;
+  left: 995px;
+}
+
 </style>
 </head>
 <body>
@@ -926,11 +1029,20 @@ top: 10px;
 </div>
 
 
-<!-- Contact Section -->
-<section id="contact" class="contact-container">
-  <div class="w3-container w3-content w3-center w3-padding-64">
-    <h2 class="contact-heading">Contact Us</h2>
-    <button class="contact-button">Get in Touch</button>
+<!-- Local Contractors section -->
+<section id="contact" class="contactors">
+  <div class="sectioncontainer"></div>
+    <p class="coustsay">What customers have to say</h2>
+    <h1 class="trust">Trustworthy Local Contractor</h1>
+    <div class="inlineflexcontainer">
+      <div class="testimg1">
+        <img src="/images/houzz_l_rgb 1.png" alt="Image 1" class="test-img">
+        <div class="test-img3"></div>
+        <div class="test-img4"></div>
+        <div class="test-img5"></div>
+      </div>
+      
+    </div>
   </div>
 </section>
 
