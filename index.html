@@ -547,6 +547,143 @@ top: 10px;
     top: 2200px;
     
   }
+  .starttext{
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding-top: 100px;
+
+  }
+  .steprow {
+  display: flex;
+  justify-content: space-between; /* Horizontally distribute items evenly */
+  align-items: center; /* Vertically center items within the row */
+  flex-wrap: wrap; /* Allow items to wrap if they don't fit in a single row */
+}
+
+  .step1{
+    width: calc(25% - 20px); /* Adjust the width based on your design */
+    margin: 10px; /* Add margin for spacing between items */
+
+  }
+  .oup-container{
+    width: auto;
+    height: auto;
+    background: #FFF;
+    flex-shrink: 0;
+
+  }
+  .rectsvc1{
+    display: flex;
+    padding: 0px 13px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+    height: 100px;
+    background: #D9D9D9;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: inline-flex;
+  }
+  .one{
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+
+  }
+  .text1 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+    position: absolute;
+    left: 255px;
+    margin-top: 179px;
+
+  }
+  .step2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    position: absolute;
+    left: 500px;
+  }
+  .rectangle2{
+    display: flex;
+    padding: 0px 13px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #e68e8e;
+    width: 100px;
+  }
+  .text2{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 590px;
+    margin-top: 179px;
+    
+  }
+  .text3{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 820px;
+    margin-top: 179px;
+
+  }
+  .text4{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 1080px;
+    margin-top: 179px;
+
+  }
 </style>
 </head>
 <body>
@@ -642,29 +779,33 @@ top: 10px;
 </div>
 
 <!-- Services Section -->
-<section id="services" class="services-container">
+<section id="services" class="oup-container">
   <div class="w3-container w3-content w3-center w3-padding-64">
-    <h2 class="services-heading">Our Services</h2>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="service-block">
-          <img class="service-image" src="/images/service1.jpg" alt="Service 1">
-          <h3 class="service-title">Service 1</h3>
-          <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="starttext">How to get started</p>
+    <h2 class="services-heading">Our Process</h2>
+    <div class="steprow">
+      <div class="step1">
+        <div class="rectsvc1">
+          <p class="one">1</p>
+          <p class="text1">Request A Quote Call us or Online Form</p>
         </div>
       </div>
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="service-block">
-          <img class="service-image" src="/images/service2.jpg" alt="Service 2">
-          <h3 class="service-title">Service 2</h3>
-          <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="step1">
+        <div class="rectsvc1">
+          <p class="one">2</p>
+          <p class="text2">On-site walkthrough</p>
         </div>
       </div>
-      <div class="w3-col l4 m6 w3-margin-bottom">
-        <div class="service-block">
-          <img class="service-image" src="/images/service3.jpg" alt="Service 3">
-          <h3 class="service-title">Service 3</h3>
-          <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="step1">
+        <div class="rectsvc1">
+          <p class="one">3</p>
+          <p class="text3">Design and Planning</p>
+        </div>
+      </div>
+      <div class="step1">
+        <div class="rectsvc1">
+          <p class="one">4</p>
+          <p class="text4">Construction</p>
         </div>
       </div>
     </div>
