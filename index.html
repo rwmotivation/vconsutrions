@@ -9,868 +9,461 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+/* Global styles */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
 
 body, html {
   height: 100%;
   line-height: 1.8;
 }
 
-  /* Style for the fixed navigation bar */
-  .w3-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Set a higher z-index to ensure it's on top of other elements */
-  }
-  /* Add some padding to the body to compensate for the fixed navbar */
-  body {
-    padding-top: 60px; /* Adjust this value according to the height of your navbar */
-  }
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/images/IMG_2141\ 1.png");
-  min-height: 100%;
+/* Navbar styles */
+.w3-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8); /* Added background color */
 }
+
+.w3-navbar {
+  padding: 0;
+}
+
+.nav-image {
+      max-height: 50px;
+      margin-right: 10px;
+    }
 
 .w3-bar .w3-button {
   padding: 16px;
 }
 
-.myNavbar {
-  background-color: #D9D9D9;
-  color: #D9D9D9;
+.w3-right-links {
+  display: none; /* Hide right-floated links on medium and small screens */
 }
 
-/* Rectangle */
+/* Responsive menu icon */
+.menu-icon {
+  display: block;
+  padding: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Rectangle styles */
 .rectangle {
-  background-color: black;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 50px;
-  margin: 0 auto;
-  display: flex;
   color: white;
   font-size: 14px;
-  position: fixed; /* Add this to make it fixed */
-  top: 50px; /* Adjust the top padding to match the height of the .w3-top element */
-  left: 0;
-  z-index: 1000; /* Make sure it's on top of other elements */
-}
-
-
-.rectangle div {
-  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.0); /* Set initial transparent background */
 }
 
 .rectangle .fa-phone {
   margin-right: 5px;
 }
 
-/* Sample Text Container */
-.sample-text-container {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Fixed Rectangle on top of Navigation Bar */
-.fixed-rectangle {
-  background-color: black;
-  width: auto;
-  height: 50px;
-  position: fixed;
-  top: 50px; /* Update top to provide spacing for the fixed element */
-  left: 0;
-  z-index: 1000; /* Make sure it's on top of other elements */
-}
-
-/* Add flex-shrink: 0 to prevent shrinking on small screens */
-.w3-bar .w3-button {
-  flex-shrink: 0;
-}
-
-/* Update padding-top to match the height of .fixed-rectangle */
-
-.w3-top {
-  padding-top: 193px; /* Adjust this value to match the height of the .rectangle element */
-  z-index: 20000;
-}
-
-/* Bold and use Roboto font for the specified div */
-.w3-bar-item.w3-center {
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-}
-
-.rectangle .fa-phone {
-  margin-right: 5px;
-  font-family: "Roboto", sans-serif; /* Apply Roboto font */
-  font-weight: normal; /* Regular font weight */
-}
-
-/* Bold and use Roboto font for the REQUEST A QUOTE link */
-.w3-bar-item.w3-center a {
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-decoration: none;
-}
-
-/* Apply Roboto Regular font in 18px size to the elements inside w3-right w3-hide-small */
-.w3-right.w3-hide-small .w3-bar-item,
-.w3-right.w3-hide-small .w3-bar-item i {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-}
-
-/* Center align the navigation links */
-.w3-right.w3-hide-small {
+/* Header styles */
+.bgimg-1 {
+  background: url("/images/IMG_2141\ 1.png") center/cover no-repeat fixed;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 800px;
-}
-
-.w3-jumbo {
-  color: #C41C10;
   text-align: center;
-  font-family: Roboto;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
-.w3-jumbo-2 {
-  color: #000;
+.jumbo-text {
+  color: #C41C10;
   font-family: Roboto;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
 }
 
-/* Mobile View */
-@media screen and (max-width: 390px) {
-  body, html {
-    width: 390px;
-    height: 5927px;
-  }
-}
-
-/* Center align header content */
-.header-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 768px) {
-  /* Mobile View Styles for Header Elements */
-  .w3-jumbo,
-  .w3-jumbo-2,
-  .w3-xxlarge {
-    color: #C41C10;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  /* Mobile View Styles for Request Quote Button */
-  .w3-button.w3-red {
-    display: flex;
-    width: 154px;
-    height: 38px;
-    padding: 15px 45px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-  }
-}
-
-/* Add the following styles for the transparent background */
-.transparent-bg {
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-.transparent-bg {
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      min-height: 100%;
-      /* Parallax effect */
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-    }
-
-    @keyframes slideUpAnimation {
-    0% {
-        transform: translateY(40%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-.gif {
-  animation: slideUpAnimation 2s;
-}    
-
-@keyframes slideUpAnimation {
-    0% {
-        transform: translateY(40%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-.gif {
-  animation: slideUpAnimation 2s infinite; /* Set the animation iteration count to infinite */
-}
-
-
-.w3-left {
-    float:none!important; 
-}
-
-   /* Block Above Footer */
-   .block-above-footer {
-    width: auto;
-    height: 284px;
-    flex-shrink: 0;
-    background: #ffffff;
-    color: #000;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    flex-direction: column; /* Add this line to stack the elements vertically */
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999; /* Set a high z-index value to ensure it appears on top */
-
-  }
-
-  .our-process {
-    color: #000000; /* To change the text color to white */
-  }
-
-
-  .get-started {
-    color: #080808;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-   /* Boxes Styles */
-   .boxes-container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 150px;
-  }
-
-  .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background: #D9D9D9;
-    color: #000;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 1
-  }
-  .custom-block {
-    width: 1440px;
-    height: 500px;
-    background: #D9D9D9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .custom-block2{
-  box-sizing: border-box;
-  width: auto;
-  max-width: auto;
-  height: 500px;
-  background: #D9D9D9;
+/* About section styles */
+.about-container {
   display: flex;
-  align-items: left;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-  margin: 0 auto;
-  padding: 20px;
-  }
-
-  .custom-block2 .heading {
-  color: rgba(0, 0, 0, 1);
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 0%;
+  flex-direction: column-reverse; /* Reverse for smaller screens */
+  align-items: center;
+  padding: 128px 16px;
 }
 
-.custom-block2 .sub-heading {
-  color: rgba(0, 0, 0, 1);
+.about-text {
+  color: #000;
   font-family: Roboto;
   font-size: 18px;
-  font-weight: 700;
-}
-
-.custom-block2 .text {
-  color: rgba(0, 0, 0, 1);
-  font-family: Roboto;
-  font-size: 18px;
+  font-weight: 400;
   line-height: 150%;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-/* Media query for responsiveness */
-@media screen and (max-width: 1440px) {
-  .custom-block2 {
-    padding: 10px;
-    height: auto;
-  }
-  
-  .custom-block2 .heading {
-    font-size: 28px;
-  }
-  
-  .custom-block2 .sub-heading {
-    font-size: 16px;
-  }
-  
-  .custom-block2 .text {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .custom-block2 {
-    padding: 5px;
-    height: auto;
-  }
-  
-  .custom-block2 .heading {
-    font-size: 24px;
-  }
-  
-  .custom-block2 .sub-heading {
-    font-size: 14px;
-  }
-  
-  .custom-block2 .text {
-    font-size: 14px;
-  }
-}
-
-.image-container {
-    position: relative;
-    width: 800px;
-    height: 600px;
- 
-  }
-  
-  .positioned-image {
-    position: absolute;
-    top: 600px;
-    left: 200px;
-  }
-
-  .middle-image {
-  z-index: 1;
-  width: 50px;
-  left: 150px; 
-  transform: translateX(-0%); 
-  top: 50%; 
-  transform: translateY(-20%);
-  }
-
-  .right-image {
-  z-index: -3;
-  width: 100px; /* Adjust this to your preferred width */
-  right: 0;
-  top: 90%; /* Position in the middle vertically */
-  transform: translateY(-80%); /* Center vertically */
-}
-
-.left-image {
-  z-index: -3;
-  width: 100px; /* Adjust this to your preferred width */
-  left: 0;
-  top: 30%; /* Position in the middle vertically */
-  transform: translateY(-180%); /* Center vertically */
-}
-.custom-element {
-  width: auto;
-  height: 150px;
-  background: #FFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.custom-text {
-  color: #000;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.trustworthy-text {
-  color: #000;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.custom-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  margin-top: 100px;
-  margin-bottom: 180px;
+.about-image {
   max-width: 100%;
   height: auto;
 }
 
-.custom-element-img {
-  width: auto;
-  height: 487px;
-  flex-shrink: 0;
-  background: url("images/bgm.jpeg") lightgray 50% / cover no-repeat;
-  position: relative;
-  text-align: center;
-  opacity: 0.6;
-
+/* Service section styles */
+.services-container {
+  background: #EFEFEF;
+  padding: 128px 16px;
 }
 
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.get-started-text,
-.quote-text {
+.services-heading {
   color: #000;
   font-family: Roboto;
-  font-style: normal;
+  font-size: 36px;
   font-weight: 700;
   line-height: normal;
-  text-transform: uppercase;
-
+  margin-bottom: 30px;
 }
 
-.get-started-text {
-  font-size: 14px;
+.service-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.quote-text {
+.service-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+
+.service-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact section styles */
+.contact-container {
+  background: #D9D9D9;
+  padding: 128px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-heading {
+  color: #000;
+  font-family: Roboto;
   font-size: 36px;
-  margin-top: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
-.red-line {
-  width: 100px;
-  height: 3px;
-  background: #C41C10;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.button-container {
+.contact-button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.custom-button {
-  display: flex;
-  width: 200px;
-  height: 50px;
-  padding: 15px 45px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   background: #C41C10;
   color: #FFF;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 15px 45px;
   border: none;
+  border-radius: 50px;
   cursor: pointer;
-}
-/* 
-.w3-xxlarge {
-    /* Your existing text styles */
-} */
-
-.w3-bar-item {
-    width: 100%; /* Expand to full width */
-    max-width: 600px; /* Adjust the maximum width as needed */
-    padding: 15px; /* Adjust padding as needed */
+  transition: background 0.3s ease;
 }
 
-.red-button {
-    display: block;
-    width: 100%;
-    height: 42.589px;
-    padding: 15px 45px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    background: #C41C10;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    text-align: center; /* Center text within the button */
-    position: absolute;
-    bottom: 0;
-    left: 50%; /* Center the button horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
+.contact-button:hover {
+  background: #000;
 }
 
-/* Media Query for Responsive Design */
-@media (max-width: 768px) {
-    .w3-xxlarge {
-        font-size: 24px; /* Adjust font size for smaller screens */
+/* Footer styles */
+.footer {
+  background-color: #222;
+  color: #aaa;
+  padding: 32px;
+  text-align: center;
+}
+
+.footer .fa-heart {
+  color: #C41C10;
+}
+
+.redbutton {
+  display: flex;
+  width: auto; /* Adjusted width to fit content */
+  height: 50px;
+  padding: 15px 45px;
+  justify-content: left;
+  align-items: left;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #C41C10;
+  margin-right: auto; /* Pushes the button to the left */
+  float: right;
+}
+
+.nav-image {
+  display: block;
+  height: 16px;
+  width: 16px; /* Adjust the height as needed */
+  margin-left: 5px; /* Add margin for spacing */
+  position: absolute;
+  top: 10px;
+}
+.mobilenum{
+  color: #FFF;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute;
+bottom: 20px;
+left: 48px;
+}
+
+.topnavtextcenter{
+  color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+float:left;
+position: absolute;
+left: 631px;
+top: 10px;
+}
+
+.rectangle-below-nav {
+      width: 100%;
+      height: 120px;
+      flex-shrink: 0;
+      background: #D9D9D9;
+      position: fixed;
+      padding-top: 60px;
+
     }
-    .red-button {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 10px 30px; /* Adjust padding for smaller screens */
+
+    .rectangle-below-nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
     }
+    .topimgredtext{
+      color: #000;
+      font-family: Roboto;
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .smrpc{
+      color: #000;
+      font-family: Roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .oss{
+      color: #C41C10;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+
+    /* Add animation styles */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.red-line2 {
-    width: 100px;
-    height: 3px;
-    background: #C41C10;
-    margin: 0 auto; /* Center the line horizontally */
+/* Apply animation to text elements with 4 seconds duration */
+.oss, .topimgredtext, .smrpc {
+  animation: slideUp 2s ease-in-out;
+  animation-fill-mode: both;
+}
+.logo-nav-image{
+  padding-left: 18px;
+  padding-top: 12px;
+  fill: #FFF;
 }
 
+.logonnav{
+  padding-bottom: 18px;
+  width: 64.657px;
+  height: 75px;
+  flex-shrink: 0;
+}
 </style>
 </head>
 <body>
-<!-- Navbar (sit on top) -->
-<div class="w3-top" style="padding-top: 52px; ">
-  <div class="w3-bar transparent-bg" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">
-      <img src="/images/Logo.png" alt="Logo" class="logo-img">
-    </a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="rectangle">
+    <div class="w3-bar w3-right">
+      <img src="/images/Vector.png" alt="Vector Image" class="logo-nav-image">
+      <a href="tel:5125522047" class="mobilenum">512.552.2047</a>
+      <a class="topnavtextcenter">Servicing Austin and surrounding areas</a>
+      <a href="requesquoteform.php" class=" redbutton">REQUEST QUOTE</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-<!-- Add the servicing and contact info here -->
-<div class="w3-bar w3-black w3-card rectangle" style="top:0px">
-  <i class="material-icons" style="margin-right: 5px;">phone</i> 512.552.2047
-  <div class="w3-bar-item w3-center" style="flex: 1;text-align: center;padding-left: 285px;">Servicing Austin and Surrounding Areas</div>
-  <div class="w3-bar-item w3-center" style="flex: 1;"></div>
-  <div class="w3-bar-item w3-center" style="flex: 1; background-color: red;">
-    <a href="your_quote_page.html" style="display: block; color: white; text-decoration: none;">
-      REQUEST A QUOTE
-    </a>
+    <div class="w3-right w3-hide-large">
+      <i class="material-icons menu-icon" onclick="openNav()">menu</i>
+    </div>
+    <div class="w3-right-links w3-hide-medium w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-phone"></i>512.552.2047</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>REQUEST QUOTE</a>
+    </div>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+  <!-- Rectangle below navigation bar -->
+  <div class="rectangle-below-nav">
+    <img src="/images/Logo.png" alt="Vector Image" class="logonnav">
+    <a href="#" class="w3-bar-item w3-button" >KITCHEN</a>
+    <a href="#about" class="w3-bar-item w3-button">BATHROOM</a>
+    <a href="#services" class="w3-bar-item w3-button">HOME RENOVATIONS</a>
+    <a href="#contact" class="w3-bar-item w3-button">GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
 
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="header-container w3-display-middle w3-center w3-text-white">
-    <div style="padding:98px">
-      <!-- Use the gif class to apply the animation -->
-      <div class="gif">
-        <span class="w3-jumbo w3-hide-small" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal; white-space: nowrap;">
-          One-stop shop <span style="color: black;">Contractor</span>
-        </span>
-      </div>
-      <br>
-      <!-- Use the gif class to apply the animation -->
-      <div class="gif">
-        <span class="w3-jumbo-2 w3-hide-small" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">
-          Simplifying remodeling complexity
-        </span>
-      </div>
-      <br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">Start something that matters</span><br>
-      <div class="w3-bar-item w3-center" style="flex: 1; display: flex; width: 200px; height: 50px; padding: 15px 45px; justify-content: center; align-items: center; gap: 10px; margin-left: 199px; flex-shrink: 0; background-color: red; white-space: nowrap;">
-        <a href="your_quote_page.html" style="display: block; color: white; text-decoration: none;">
-          REQUEST A QUOTE
-        </a>
-      </div>
-    </div>
+<!-- Sidebar (for small screens) -->
+<div id="mySidebar" class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large">
+  <button class="w3-bar-item w3-button w3-large w3-padding-16 w3-right" onclick="closeNav()">Close ×</button>
+  <a href="#" class="w3-bar-item w3-button">KITCHEN</a>
+  <a href="#about" class="w3-bar-item w3-button">BATHROOM</a>
+  <a href="#services" class="w3-bar-item w3-button">HOME RENOVATIONS</a>
+  <a href="#contact" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="#contact" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+
+</div>
+
+
+
+<!-- Header -->
+<header class="bgimg-1" id="home">
+  <div class="w3-display-middle w3-padding-large">
+    <h1 class="oss">One-stop shop</h1><h1 class="topimgredtext"> Contractor</h1><h4 class="smrpc"> Simplifying remodeling complexity</h4>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
   </div>
 </header>
+
 <!-- About Section -->
-<div class="w3-container" style="padding: 128px 16px";   id="about">
-  <div style="display: flex; width: 1440px;  height: auto; flex-shrink: 0; background: #FFF; margin: 0 auto;">
-    <div style="flex: 1; padding: 20px;">
-      <h3 class="w3-left" style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
-        Who we are
-      </h3>
-      <br>
-      <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 56px; font-style: bold; font-weight: 700; line-height: normal; margin-top: 2px; margin-bottom: 2px;">
-        VJ Tellez Construction LLC
-      </p>
-      <div style="width: 100px; height: 3px; background: #C41C10;"></div>
-      <br>
-      <p class="w3-left w3-large" style="color: #000; font-family: Roboto; font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%;">
-        We are a kitchen and bathroom contractor with over 15 years of experience serving the Austin, Texas area. We operate as a one-point-of-contact for all remodeling and construction needs, simplifying the complexity of managing multiple contractors.
-      <div class="w3-row-padding w3-center" style="margin-top: 64px;">
-        <!-- Rest of your about section code -->
+<section id="about" class="about-container">
+  <div class="w3-container w3-content w3-center w3-padding-64">
+    <div class="w3-col m6">
+      <img class="about-image" src="/images/about.jpg" alt="About Us">
+    </div>
+    <div class="w3-col m6">
+      <h2>About Us</h2>
+      <p class="about-text">At VJ Tellez Construction LLC, we are dedicated to providing high-quality construction services.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-container">
+  <div class="w3-container w3-content w3-center w3-padding-64">
+    <h2 class="services-heading">Our Services</h2>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="service-block">
+          <img class="service-image" src="/images/service1.jpg" alt="Service 1">
+          <h3 class="service-title">Service 1</h3>
+          <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="service-block">
+          <img class="service-image" src="/images/service2.jpg" alt="Service 2">
+          <h3 class="service-title">Service 2</h3>
+          <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="service-block">
+          <img class="service-image" src="/images/service3.jpg" alt="Service 3">
+          <h3 class="service-title">Service 3</h3>
+          <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
     </div>
-    <!-- Image -->
-    <img src="/images/30f5a0592d61f646e3a8042786404329.png" alt="Your Image" style="width: 495px; height: 279px; flex-shrink: 0;">
   </div>
-</div>
+</section>
 
-<!-- Background tile with values -->
-<div class="w3-container"  style="width: 1046px; height: 1600px; flex-shrink: 0; background: #EFEFEF; position: absolute; z-index: 1;">
-  <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-    What we offer
+<!-- Contact Section -->
+<section id="contact" class="contact-container">
+  <div class="w3-container w3-content w3-center w3-padding-64">
+    <h2 class="contact-heading">Contact Us</h2>
+    <button class="contact-button">Get in Touch</button>
   </div>
-  <br>
-  <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
-    Our Services
-  </p>
-  <div style="width: 100px; height: 3px; background: #C41C10;"></div>
+</section>
 
-  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase;">
-    Bathroom Remodeling
-  </p>
-  
-  <br>
-  <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-    Let our expert builders bring your dream bathroom to life. From double sinks to tiled showers and everything in between we can build it on time and budget. Need help planning your dream bathroom? Our designer can assist in designing, planning, and picking the right materials.
-  </p>
-  <!-- Image -->
-  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 100%; transform: translateX(-50%);">
-      <!-- second block of services section -->
-    <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-      What we offer
-    </div>
-    <br>
-    <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
-      Kitchen Remodeling
-    </p>
-    
-    <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-      The kitchen is the heart of the home, let us build the kitchen you  have always dreamed of. Not sure where to start? Our designer can assist in the planning process to get it just right.    </p>
-     <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-    </div>
-    <!-- Image -->
-    <img src="/images/kitchenremodel.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 430px; left: 100%; transform: translateX(-50%);">
-<!-- Background tile with values -->
-  <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-  </div>
-  <p style="color: #000; font-family: Roboto; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal;">
-    In-Home Remodeling </p>
-  <img src="/images/inhome.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 688px; left: 100%; transform: translateX(-50%);">
-  <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-    Although, we specialize in bathroom and kitchen remodeling we can do almost about any remodel work. We know confidently you will get the remodel you dream of.
-  </p>
-  <!-- Image -->
-  <img src="/images/design.png" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 100px; left: 206%; transform: translateX(-50%);">
-  <!-- Second block of services section -->
-  <div style="color: #000; font-family: Roboto; font-size: 14px; font-style: normal; font-weight: 700; line-height: normal; text-transform: uppercase; position: absolute; top: 50px; left: 10%; transform: translateX(-50%);">
-  </div>
-  <br>
-  <p style="color: #000; font-family: Roboto;width: 475px; font-size: 24px; font-style: bold; font-weight: 700; line-height: normal; text-transform: uppercase;">
-    Design
-  </p>
-
-  <img src="/images/b263d839e791e61d47a10afd5ffa126d.jpeg" alt="Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-image>), lightgray 50% / cover no-repeat; position: absolute; top: 945px; left: 100%; transform: translateX(-50%);">
-  <p style="color: #000; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 400; line-height: normal; width: 475px;">
-    Not sure where to start? Our in-house designer can assist you find the perfect look for your home. See how your home can potentially look and what works best for your home.
-  </p>
-  <!-- Sec  ond image -->
-  <img src="/images/your_second_image.jpg" alt="Your Second Image" style="width: 400px; height: 213px; flex-shrink: 0; background: url(<path-to-second-image>), lightgray 50% / cover no-repeat; position: absolute; top: 512px; left: 206%; transform: translateX(-50%);">
-</div>
-
-
-</div>
-<!-- Second Block Section -->
-<div class="w3-container" style="width: auto; height: 1851px; flex-shrink: 0; background: #D9D9D9; padding: 128px 16px; position: relative; z-index: 0;" id="about">
-  <!-- <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px"> -->
-    <!-- Rest of your about section code -->
-  </div>
-</div>
-
-<!-- Our Process block -->
-<div class="block-above-footer">
-  <p class="get-started">How to get started</p>
-  <h2 class="our-process">Our Process</h2>
-  
-</div>
-
-<div class="boxes-container" style="margin-left: 370px;">
-  <div class="box">1</div>
-  <div class="box">2</div>
-  <div class="box">3</div>
-  <div class="box">4</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<!-- custom block2  -->
-<div class="custom-block2">
-  <p  style="padding-top: 450px; font-family: Roboto;font-size: 14px;font-weight: 700;text-transform: uppercase;">What we have done</p>
-  <p class="sub-heading">Gallery</p>
-  <div class="content-wrapper">
-    <p class="text">See why our customers love our work.</p>
-  
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="color: #C41C10; text-align: center; font-family: Roboto; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;">Start something that matters</span><br>
-    <div class="w3-bar-item w3-center" style="flex: 1; display: flex; justify-content: left; align-items: left; margin-left: 15px; margin-right: auto; background-color: red; white-space: nowrap; position: relative;z-index: 1;width: 200px; height: 48px;">
-        <a href="your_quote_page.html" class="red-button">
-            VIEW Gallery
-        </a>
-      </div>
-    
-
-    <div class="image-container">
-    <img src="/images/c4a7345e29c41b22b1c0f6501e8c34d8.jpeg" class="middle-image" style="width: 413px; height: 275px; flex-shrink: 0; float: right; margin-left: 520px; margin-right: -750px; margin-top: -120px;" alt="Image">
-    <img src="/images/right.jpeg" alt="Image 3" class="right-image" style="width: 413px;height: 275px;flex-shrink: 0;float: left;margin-left: 520px;margin-right: -480px;margin-top: 43px;">
-    <img src="/images/left.jpeg" alt="Image 3" class="left-image" style="width: 413px;height: 275px;flex-shrink: 0;float: right;margin-left: 520px;margin-right: -480px;margin-top: -45px;">
-  </div>
-</div>
-</div>
-
-</div>
-<br>
-<br>
-<br>
-<div class="custom-element">
-<p class="custom-text">What customers have to say</p>
-<p class="trustworthy-text" style="font-style: bold; text-decoration: underline red;color: black;">Trustworthy Local Contractor</p>
-</div>
-
-<div class="custom-image">
-  <img src="/images/Logos.png" alt="Image">
-</div>
-<div class="custom-element-img">
-  <br>
-<p class="get-started-text">GET STARTED</p>
-<p class="quote-text" style="opacity: initial;">Request A Free Quote</p>
-
-
-<div class="red-line2"></div>
-
-<br>
-
-<div class="button-container">
-  <button class="custom-button">Request Quote</button>
-</div>
-</div>
-</div>
-<!-- footer -->
-<footer class="w3-center w3-black w3-padding-64" style="position: relative; z-index: 100; width: auto; height: 400px; flex-shrink: 0; background: #000;">
-  <img src="/images/Logo (1).png" alt="Logo`" class="logo-img" style="position: absolute; top: 10px; left: 10px; width: 75px; height: 86.992px; flex-shrink: 0;">
-  <div class="w3-xlarge w3-section">
-  </div>
-  <a href="https://www.cloudzguru.com" title="CloudzGuru" target="_blank" rel="nofollow" class="w3-hover-text-green"></a>
-  <p></p>
+<!-- Footer -->
+<footer class="footer">
+  <p>Copyright © VJ Tellez Construction LLC</p>
 </footer>
 
-
-<!-- Script for sidebar/navigation -->
 <script>
-window.addEventListener("scroll", function() {
-  var navbar = document.getElementById("myNavbar");
-  if (window.scrollY > 0) {
-    navbar.style.backgroundColor = "#D9D9D9";
-  } else {
-    navbar.style.backgroundColor = "transparent";
-  }
-});
-<!-- Script for parallax effect -->
-window.addEventListener("scroll", function() {
-      var header = document.getElementById("home");
-      var yPos = -window.scrollY / 2;
-      header.style.backgroundPositionY = yPos + "px";
-    });
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+window.onscroll = function() {
+    var navBar = document.querySelector('.rectangle');
+    var rectBelowNav = document.querySelector('.rectangle-below-nav');
+    
+    if (window.pageYOffset > 0) {
+      navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      rectBelowNav.style.backgroundColor = '#D9D9D9';
+    } else {
+      navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      rectBelowNav.style.backgroundColor = 'transparent';
+    }
+  };
 </script>
 
 </body>
