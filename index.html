@@ -64,7 +64,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.0); /* Set initial transparent background */
 }
 
@@ -80,6 +80,7 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width:100%
 }
 
 .jumbo-text {
@@ -120,6 +121,7 @@ body, html {
 .about-image {
   max-width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 /* Service section styles */
@@ -1055,8 +1057,34 @@ top: 10px;
     .brmtext {
       margin: 10px 0;
     }
+    .eclipse1{
+      width: 88px;
+      height: 88px;
+      flex-shrink: 0;
+      stroke-width: 5px;
+      float: right;
+      margin-left: 1000px;
+      stroke: #FFF;
+      fill: #C41C10;
+      position: absolute;
+      left: 180px;
+      right: 80px;
+      top: 550px;
+    
+      
+    }
+    .polygon{
+      width: 52.333px;
+      height: 44.362px;
+      transform: rotate(88.854deg);
+      flex-shrink: 0;
+      fill: #FFF;
+      position: absolute;
+      left: 480px;
+      right: 180px;
+      top: 550px;
 
-
+    }
 </style>
 </head>
 <body>
@@ -1125,6 +1153,8 @@ top: 10px;
       <p class="aboutsecsmalltext">Who we are</p>
       <h2 class="aboutsectionheading">VJ Tellez Construction LLC</h2>
       <div class="redline1">
+        <image class="polygon" src="/images/Polygon 1.png" style="margin-left: 985px; position: ; "></image>
+        <div class ="eclipse1"><image class="eclipse1" style="margin-left: 954px; margin-top: -87px;" src="/images/Ellipse 1.png"></image></div>
       <p class="about-text">We are a kitchen and bathroom contractor with over 15 years of experience serving the Austin, Texas area. We operate as a one-point-of-contact for all remodeling and construction needs, simplifying the complexity of managing multiple contractors.</p>
     </div>
   </div>
